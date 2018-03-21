@@ -41,7 +41,7 @@ public class MorseCode {
 
 	}
 	
-	static void translate (String morseCode) {
+	static String translate (String morseCode) {
 		String[] tokens = morseCode.split(" "); // split string in an array of strings called tokens
 		String[] letters = new String[tokens.length]; //new array same length as tokens
 		
@@ -51,7 +51,7 @@ public class MorseCode {
 			letters[i] = letter;
 		}
 		String sentence = String.join("", letters);
-		System.out.println(sentence);
+		return sentence;
 	}
 
 }
